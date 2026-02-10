@@ -1,5 +1,5 @@
 - name: create ec2 instance and r53 records
-  hsots: all
+  hosts: all
   connection: local
   vars: 
     sg_id: sg-0acabaec039aacc53
