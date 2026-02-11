@@ -16,10 +16,10 @@
       image_id: "{{ ami_id }}"
       name: "{{ item }}-{{ env }}"
       tags:
-      Project: roboshop
-      Component: "{{ item }}"
-      Environment: "{{ env }}"
-      Name: "{{ item }}-{{ env }}"
+        Project: roboshop
+        Component: "{{ item }}"
+        Environment: "{{ env }}"
+        Name: "{{ item }}-{{ env }}"
     loop: "{{ instances }}"
     register: ec2_output
 
