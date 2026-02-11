@@ -4,7 +4,7 @@
   vars: 
     sg_id: sg-0acabaec039aacc53
     ami_id: ami-0220d79f3f480ecf5
-    domain_name: daws-88
+    domain_name: hkhinfoxyg.xyz
     env: dev
     instances:
     - mangodb
