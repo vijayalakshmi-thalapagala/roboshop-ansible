@@ -34,8 +34,8 @@
       zone: "{{ domain_name }}"
       record: "{{ item.item }}-{{ env }}.{{domain_name}}" #mangodb-dev.hkhinfoxyg.xyz
       type: A
-      ttl: 7200
+      ttl: 1
       value: "{{ item.instances[0].private_ip_address }}"
       wait: true
-    loop: "{{ ec2_instance.results }}"
+    loop: "{{ ec2_output.results }}"
 
